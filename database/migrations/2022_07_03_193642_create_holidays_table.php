@@ -18,7 +18,7 @@ return new class extends Migration
         Schema::create('holidays', function (Blueprint $table) {
             $table->id();
             $table->date('from');
-            $table->date('to');[p90]
+            $table->date('to');
             $table->tinyInteger('duration');
             $table->text('comment');
             $table->foreignIdFor(Type::class)->constrained();
